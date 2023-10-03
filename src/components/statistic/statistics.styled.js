@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const StatsSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -9,7 +7,6 @@ export const StatsSection = styled.section`
   justify-content: center;
   max-width: 400px;
   border: 1px solid rgba(211, 211, 211, 0.4);
-  
 `;
 
 export const StatsTitle = styled.h2`
@@ -19,8 +16,6 @@ export const StatsTitle = styled.h2`
   font-size: 18px;
   margin: 30px;
 `;
-
-
 
 export const StatsList = styled.ul`
   display: flex;
