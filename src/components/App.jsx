@@ -4,8 +4,8 @@ import { Statistics } from './statistic/statistics';
 import data from '../../src/data.json';
 import friends from '../../src/friends.json';
 import { FriendList } from './friendlist/friendlist';
-import transactions from '../../src/transactions';
 import { TransactionHistory } from './transactions/transactions';
+import transactions from '../../src/transactions';
 
 export const App = () => {
   return (
