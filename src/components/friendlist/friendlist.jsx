@@ -1,19 +1,19 @@
 import { ListOfFriends } from './friendlist.styled';
-import { FriendlistItem } from './friendlist.styled';
-import { Status } from './friendlist.styled';
-import { Image } from './friendlist.styled';
-import { Name } from './friendlist.styled';
+import { FriendListItem } from './friendlistitem';
 
 export const FriendList = ({ friends }) => {
   return (
     <ListOfFriends>
-      {friends.map(item => (
-        <FriendlistItem key={item.id}>
-          <Status color={item.isOnline ? 'green' : 'red'}></Status>
-          <Image src={item.avatar} alt="User avatar" />
-          <Name>{item.name}</Name>
-        </FriendlistItem>
-      ))}
+      {friends.map(({ avatar, name, id, isOnline }) => {
+        return (
+          <FriendListItem
+            avatar={avatar}
+            name={name}
+            key={id}
+            isOnline={isOnline}
+          />
+        );
+      })}
     </ListOfFriends>
   );
 };

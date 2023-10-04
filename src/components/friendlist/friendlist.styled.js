@@ -7,7 +7,7 @@ export const ListOfFriends = styled.ul`
   gap: 8px;
 `;
 
-export const FriendlistItem = styled.li`
+export const ListItem = styled.li`
   border: 1px solid lightgrey;
   box-shadow: 5px 2px 2px lightgrey;
   padding: 10px;
@@ -19,7 +19,7 @@ export const FriendlistItem = styled.li`
 
 export const Status = styled.span`
   display: inline-block;
-  background-color: ${({color}) =>  color};
+  background-color: ${({ color }) => color};
   width: 15px;
   height: 15px;
   border-radius: 8px;
